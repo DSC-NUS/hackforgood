@@ -80,6 +80,7 @@
     font-size: 1.5rem;
     border-radius: 3px;
     transition: all .2s;
+    border: none;
 
     &:hover {
         transform: translateY(-3px) scale(1.1);
@@ -114,11 +115,13 @@
 }
 
 .card {
-    background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
+    background-color: $color-yellow;
+    color: $color-secondary;
     display: flex;
     flex-direction: column;
     padding: 2rem;
     border-radius: 10px;
+    border: 4px solid $color-secondary;
 
     &__image {
         height: 20rem;
@@ -137,6 +140,8 @@
 .features {
     display: grid;
     grid-template-columns: repeat(auto-fit, minMax(50rem, 1fr));
+    grid-row-gap: 3rem;
+    grid-column-gap: 3rem;
 }
 
 .feature {
@@ -151,6 +156,10 @@
     &__image {
         height: 15rem;
         width: 15rem;
+    }
+
+    &__content {
+        padding: 3rem;
     }
 }
 
@@ -184,7 +193,7 @@
     display: grid;
     grid-template-columns: 25rem 60rem;
     color: white;
-    border: 1px solid $color-grey-light-1;
+    border: 4px solid $color-grey-light-1;
     border-radius: 5px;
     padding: 2rem;
 
@@ -217,6 +226,12 @@
     color: $color-secondary;
 }
 
+.question {
+    &:not(:last-child) {
+        margin-bottom: 2rem;
+    }
+}
+
 .collapsible {
     background-color: #eee;
     color: $color-grey-dark-1;
@@ -226,11 +241,8 @@
     border: none;
     text-align: left;
     outline: none;
-    font-size: 15px;
-
-    &:not(:last-child) {
-        margin-bottom: 2rem;
-    }
+    font-size: 1.5rem;
+    font-weight: 500;
 }
   
 .active, .collapsible:hover {
@@ -240,6 +252,7 @@
 .content {
     padding: 3rem 5rem;
     font-size: 1.5rem;
+    font-family: 'Lato';
     display: none;
     overflow: hidden;
     background-color: white;
@@ -271,34 +284,46 @@
 .section-register {
     text-align: center;
     padding: 8rem 3rem;
+    background-color: $color-teal;
 }
 
 .footer {
     text-align: center;
     padding: 8rem 3rem;
-    background-color: $color-primary-light;
+    background-color: $color-secondary;
     color: white;
 }
 
 table {
-    font-family: arial, sans-serif;
+    font-family: 'Lato', arial, sans-serif;
+    font-size: 1.5rem;
     border-collapse: collapse;
+    border: 4px solid $color-secondary;
     width: 100%;
+  }
+
+  th {
+      background-color: $color-yellow;
+      font-size: 2rem;
   }
   
   td, th {
     border: 1px solid #dddddd;
     text-align: left;
-    padding: 8px;
+    padding: 2rem;
   }
   
   tr:nth-child(even) {
-    background-color: #dddddd;
+    background-color: white;
+  }
+
+  tr:nth-child(odd) {
+    background-color: $color-grey-light-1;
   }
 
   .timelines{
-    display: flex;
-    justify-content: start;
-    align-items: center;
-
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minMax(50rem, 1fr));
+    grid-row-gap: 3rem;
+    grid-column-gap: 3rem;
   }
