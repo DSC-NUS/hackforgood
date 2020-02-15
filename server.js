@@ -15,3 +15,5 @@ app.get('/*', function (req, res) {
 app.listen(port, () => {
     console.log("server is up")
 });
+
+// for macOS package.json: "devserver": "/usr/local/bin/live-server"

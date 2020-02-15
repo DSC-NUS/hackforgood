@@ -1,12 +1,13 @@
 // COLOR VARIABLES
 $color-primary: #963cd3;
 $color-primary-dark: #7B5DB3;
+$color-primary-medium-light: rgb(177, 133, 253);
 $color-primary-light: #C19EFF;
 
 $color-secondary: #101d2c;
 $color-teal: #47e4dd;
 $color-yellow: #ffd535;
-$color-yellow-dark: #BDBA8F;
+$color-yellow-dark: rgb(240, 196, 52);
 
 $color-grey-light-1: #f9f7f6;
 $color-grey-light-2: rgb(224, 223, 223);
@@ -34,6 +35,7 @@ $bp-small: 37.5em;    // 600px;
 }
 
 html {
+    scroll-behavior: smooth;
     box-sizing: border-box;
     font-size: 62.5%; // 10px/16px = 62.5% -> 1rem = 10px
 

@@ -6,6 +6,7 @@
   box-sizing: inherit; }
 
 html {
+  scroll-behavior: smooth;
   box-sizing: border-box;
   font-size: 62.5%; }
   @media only screen and (max-width: 75em) {
@@ -60,20 +61,35 @@ body {
     margin: .5rem 20rem .5rem 2rem; }
 
 .section-header {
-  padding-top: 5rem;
+  padding-top: 7rem;
   padding-bottom: 5rem;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 0.8fr 1.2fr;
   align-items: center;
   justify-content: center;
   background-color: #963cd3;
   color: #f9f7f6; }
 
-.image {
+.header__image {
   display: block;
   height: 30rem;
   width: 30rem;
   margin: 0 auto; }
+
+.header__timer-title {
+  font-size: 1.8rem;
+  font-weight: 500; }
+
+.header__content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 2rem;
+  padding: 2rem 3rem 2rem 0; }
+
+#header__countdown {
+  font-family: 'Lato';
+  font-size: 5rem;
+  font-weight: 100; }
 
 .list {
   list-style: none;
@@ -99,7 +115,7 @@ body {
   border: 0.5px solid #e0dfdf;
   width: 80%; }
 
-.section-intro {
+.section-about {
   background-color: white;
   color: #101d2c;
   padding: 8rem 3rem; }
@@ -109,7 +125,7 @@ body {
   grid-template-columns: repeat(auto-fit, minMax(30rem, 1fr));
   grid-column-gap: 2.5rem;
   grid-row-gap: 2.5rem;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   color: #f9f7f6; }
 
@@ -120,14 +136,40 @@ body {
   flex-direction: column;
   padding: 2rem;
   border-radius: 10px;
-  border: 4px solid #101d2c; }
+  border: 4px solid #101d2c;
+  cursor: pointer; }
+  .card:hover {
+    background-color: #f0c434; }
+  .card__collapsible {
+    cursor: pointer;
+    color: #333;
+    background-color: transparent;
+    padding: 2rem;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 2rem;
+    font-family: 'Baloo Bhai', sans-serif;
+    font-weight: 500; }
+  .card__content {
+    padding: 3rem 2rem;
+    font-size: 1.5rem;
+    font-family: 'Lato';
+    display: none;
+    overflow: hidden;
+    background-color: transparent; }
   .card__image {
     height: 20rem;
     width: 20rem;
     display: block;
     margin: 0 auto; }
 
-.section-about {
+.card-active {
+  background-color: #f0c434;
+  border-radius: 10px; }
+
+.section-steps {
   background-color: #f9f7f6;
   color: #101d2c;
   padding: 8rem 3rem; }
@@ -167,23 +209,28 @@ body {
   color: #101d2c; }
 
 .prizes {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; }
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-row-gap: 2rem; }
+
+.prizes--horizontal {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minMax(50rem, 1fr));
+  grid-column-gap: 2rem;
+  justify-items: center;
+  grid-row-gap: 2rem; }
 
 .prize {
   display: grid;
-  grid-template-columns: 25rem 60rem;
+  grid-template-columns: 15rem 25rem;
+  max-width: 50rem;
   color: white;
   border: 4px solid #f9f7f6;
   border-radius: 5px;
   padding: 2rem; }
-  .prize:not(:last-child) {
-    margin-bottom: 2rem; }
-  .prize__image {
-    height: 25rem;
-    width: 25rem;
+  .prize__img {
+    height: 15rem;
+    width: 15rem;
     display: block; }
   .prize__money {
     color: #C19EFF;
@@ -208,7 +255,8 @@ body {
   cursor: pointer;
   padding: 2rem;
   width: 100%;
-  border: none;
+  border-bottom: 3px solid #963cd3;
+  border-radius: 3px;
   text-align: left;
   outline: none;
   font-size: 1.5rem;
@@ -245,7 +293,7 @@ body {
 .section-register {
   text-align: center;
   padding: 8rem 3rem;
-  background-color: #47e4dd; }
+  background-color: #ffd535; }
 
 .footer {
   text-align: center;
@@ -280,6 +328,23 @@ tr:nth-child(odd) {
   grid-template-columns: repeat(auto-fit, minMax(50rem, 1fr));
   grid-row-gap: 3rem;
   grid-column-gap: 3rem; }
+
+#scrollToTop {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: 3px solid black;
+  outline: none;
+  background-color: #C19EFF;
+  color: black;
+  cursor: pointer;
+  padding: 1.5rem;
+  border-radius: 50rem; }
+  #scrollToTop:hover {
+    background-color: #b185fd; }
 
 .title {
   font-size: 5rem;
@@ -321,7 +386,7 @@ tr:nth-child(odd) {
 
 .link:hover,
 .link:active {
-  color: white;
+  color: #ffd535;
   transform: scale(1.1); }
 
 .u-margin-bottom-small {
@@ -329,6 +394,9 @@ tr:nth-child(odd) {
 
 .u-margin-bottom-medium {
   margin-bottom: 4.5rem; }
+
+.margin-auto {
+  margin: 0 auto; }
 
 .align-center {
   text-align: center; }

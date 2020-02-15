@@ -17,33 +17,41 @@
         </a>
         <div class="nav__links">
             <a href="#about" class="nav__icon-about">About</a>
-            <a href="#timeline" class="nav__icon-about">Timeline</a>
+            <a href="#steps" class="nav__icon-about">Steps</a>
             <a href="#prizes" class="nav__icon-about">Prizes</a>
             <a href="#faq" class="nav__icon-about">FAQ</a>
             <a href="#sponsors" class="nav__icon-about">Sponsors</a>
         </div>
     </nav>
     <div class="section-header">
-        <div class="image-box">
-            <img src="img/hglogo.png" alt="Logo" class="image">
+        <div class="header__image-box">
+            <img src="img/hglogo.png" alt="Logo" class="header__image">
         </div>
-        <div class="content-box">
+        <div class="header__content-box">
             <h1 class="title">
                 Hack For Good 2020
             </h1>
-            <ul class="list">
-                <li>20, 21 and 22 March</li>
-                <li>Google Developer Space</li>
-                </li>80 Pasir Panjang Rd, Level 3, Singapore 117372</li>                
-            </ul>
-            <hr class="divider"/>
-            <a href="#" class="btn btn-primary">Sign Up Now</a>
+            <div class="header__content">
+                <div class="header__info">
+                    <ul class="list">
+                        <li>20, 21 and 22 March</li>
+                        <li>Google Developer Space</li>
+                        </li>80 Pasir Panjang Rd, Level 3, Singapore 117372</li>                
+                    </ul>
+                    <hr class="divider"/>
+                    <a href="#" class="btn btn-primary">Register Now</a>
+                </div>
+                <div class="header__timer">
+                    <h2 class="header__timer-title">Countdown to submission</h2>
+                    <p id="header__countdown"></p>
+                </div>
+            </div>
         </div>
     </div>
 
-    <div class="section-intro">
+    <div class="section-about" id="about">
         <div class="u-margin-bottom-medium">
-            <h2 class="title-secondary align-center u-margin-bottom-small">Problem Statements</h2>
+            <h2 class="title-secondary align-center u-margin-bottom-small">What is it about?</h2>
             <p class="paragraph align-center">
                 DSC NUS presents Hack For Good, a student-run weekend-long hackathon which seeks to inspire students to learn and use technology for social causes. 
                 Our innovation challenge is unique in that we are posing real problem statements provided by NPOs in Singapore. Participating teams are expected to create technological prototypes as part of their solution to tackle their chosen statement and directly benefit the NPO backing each statement.
@@ -51,7 +59,16 @@
         </div>
         <div class="cards">
             <div class="card">
-                <div class="card__image-box">
+                <div class="question">
+                    <button type="button" class="card__collapsible">What do I need to bring?</button>
+                    <div class="card__content">
+                        <div class="card__image-box">
+                            <img src="img/dscnuslogo.png" alt="Logo" class="card__image">
+                        </div>
+                        <p>Bring your own laptop, charger and any other tech you will need for your hack. A photo ID will be required to gain entrance into the hackathon. A jacket and water bottle is recommended too.</p>
+                    </div>
+                </div>
+                <!-- <div class="card__image-box">
                     <img src="img/dscnuslogo.png" alt="Logo" class="card__image">
                 </div>
                 <h3 class="title-tertiary title-tertiary--dark">Environment</h2>
@@ -60,37 +77,35 @@
                     <li>18–19 January 2020</li>
                     <li>Cinnamon-Tembusu Dining Hall</li>
                     </li>26 College Avenue East, Singapore 138597</li>                
-                </ul>
+                </ul> -->
             </div>
             <div class="card">
-                <div class="card__image-box">
-                    <img src="img/dscnuslogo.png" alt="Logo" class="card__image">
+                <div class="question">
+                    <button type="button" class="card__collapsible">What do I need to bring?</button>
+                    <div class="card__content">
+                        <div class="card__image-box">
+                            <img src="img/dscnuslogo.png" alt="Logo" class="card__image">
+                        </div>
+                        <p>Bring your own laptop, charger and any other tech you will need for your hack. A photo ID will be required to gain entrance into the hackathon. A jacket and water bottle is recommended too.</p>
+                    </div>
                 </div>
-                <h3 class="title-tertiary title-tertiary--dark">Equality</h3>
-                <p class="paragraph">A team must have at most 4 members.</p>
-                <ul class="list">
-                    <li>18–19 January 2020</li>
-                    <li>Cinnamon-Tembusu Dining Hall</li>
-                    </li>26 College Avenue East, Singapore 138597</li>                
-                </ul>
             </div>
             <div class="card">
-                <div class="card__image-box">
-                    <img src="img/dscnuslogo.png" alt="Logo" class="card__image">
+                <div class="question">
+                    <button type="button" class="card__collapsible">What do I need to bring?</button>
+                    <div class="card__content">
+                        <div class="card__image-box">
+                            <img src="img/dscnuslogo.png" alt="Logo" class="card__image">
+                        </div>
+                        <p>Bring your own laptop, charger and any other tech you will need for your hack. A photo ID will be required to gain entrance into the hackathon. A jacket and water bottle is recommended too.</p>
+                    </div>
                 </div>
-                <h3 class="title-tertiary title-tertiary--dark">Health</h3>
-                <p class="paragraph">A team must have at most 4 members.</p>
-                <ul class="list">
-                    <li>18–19 January 2020</li>
-                    <li>Cinnamon-Tembusu Dining Hall</li>
-                    </li>26 College Avenue East, Singapore 138597</li>                
-                </ul>
             </div>
         </div>
     </div>
 
-    <div class="section-about" id="about">
-        <h2 class="title-secondary align-center u-margin-bottom-small">About the Hackathon</h2>
+    <div class="section-steps" id="steps">
+        <h2 class="title-secondary align-center u-margin-bottom-small">What you need to do</h2>
         <div class="features">
             <div class="feature">
                 <div class="feature__image-box">
@@ -154,7 +169,7 @@
         </div>
     </div>
 
-    <div class="section-timeline" id="timeline">
+    <!-- <div class="section-timeline" id="timeline">
         <h2 class="title-secondary align-center u-margin-bottom-small">The Timeline</h2>
         <div class="timelines">
             <div>
@@ -244,12 +259,12 @@
                   </table >
             </div>
         </div>
-    </div>
+    </div> -->
     
     <div class="section-prizes" id="prizes">
         <h2 class="title-secondary align-center color-primary-light u-margin-bottom-small">The Prizes</h2>
         <div class="prizes">
-            <div class="prize">
+            <div class="prize margin-auto">
                 <div class="prize__image-box">
                     <img src="img/dscnuslogo.png" alt="Champion" class="prize__img">
                 </div>
@@ -258,22 +273,24 @@
                     <p class="paragraph">SGD<span class="prize__money">5000</span></p>
                 </div>
             </div>
-            <div class="prize">
-                <div class="prize__image-box">
-                    <img src="img/dscnuslogo.png" alt="2nd prize" class="prize__img">
+            <div class="prizes--horizontal">
+                <div class="prize">
+                    <div class="prize__image-box">
+                        <img src="img/dscnuslogo.png" alt="2nd prize" class="prize__img">
+                    </div>
+                    <div class="prize__content-box">
+                        <h3 class="title-tertiary">2nd Prize</h3>
+                        <p class="paragraph">SGD<span class="prize__money">2000</span></p>
+                    </div>
                 </div>
-                <div class="prize__content-box">
-                    <h3 class="title-tertiary">2nd Prize</h3>
-                    <p class="paragraph">SGD<span class="prize__money">2000</span></p>
-                </div>
-            </div>
-            <div class="prize">
-                <div class="prize__image-box">
-                    <img src="img/dscnuslogo.png" alt="3rd prize" class="prize__img">
-                </div>
-                <div class="prize__content-box">
-                    <h3 class="title-tertiary">3rd Prize</h3>
-                    <p class="paragraph">SGD<span class="prize__money">1000</span></p>
+                <div class="prize">
+                    <div class="prize__image-box">
+                        <img src="img/dscnuslogo.png" alt="3rd prize" class="prize__img">
+                    </div>
+                    <div class="prize__content-box">
+                        <h3 class="title-tertiary">3rd Prize</h3>
+                        <p class="paragraph">SGD<span class="prize__money">1000</span></p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -355,6 +372,8 @@
         <p class="paragraph u-margin-bottom-medium paragraph">Feel free to contact us at </p>
         <p class="paragraph paragraph">Please visit us at <br/><a class="link" href="https://dscnus-frontend.herokuapp.com/" target="_blank">https://dscnus-frontend.herokuapp.com/</a></p>
     </footer>
+
+    <button id="scrollToTop">&#x25B2;</button>
 </body>
 <script src="js/script.js"></script>
 </html>
