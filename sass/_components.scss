@@ -186,7 +186,6 @@
     }
 
     &__image-box {
-        // background-color: white;
     //     border-radius: 5px;
     //     box-shadow: .5rem .5rem .7rem rgba($color-grey-dark-1, 0.2);
     }
@@ -341,6 +340,9 @@
     grid-template-columns: repeat(auto-fit, minMax(50rem, 1fr));
     align-items: center;
     justify-content: center;
+    &:not(:last-child) {
+        margin-bottom: 3rem;
+    }
 }
 
 .sponsor {
@@ -349,6 +351,8 @@
         width: 20rem;
         display: block;
         margin: 0 auto;
+        border-radius: 5px;
+        border: 5px solid black;
     }
 }
 
@@ -356,6 +360,20 @@
     text-align: center;
     padding: 8rem 3rem;
     background-color: $color-yellow;
+}
+
+.register {
+    margin: 0 auto;
+
+    &__divider {
+        margin: 5rem 2rem;
+        border: 1px dashed $color-grey-dark-2
+    }
+
+    &__image {
+        height: 20rem;
+        width: auto    
+    }
 }
 
 .footer {
