@@ -1,6 +1,6 @@
 // --- COLLAPSIBLES ---
 
-var coll = document.getElementsByClassName("collapsible");
+var coll = document.getElementsByClassName("question__collapsible");
 var i;
 
 for (i = 0; i < coll.length; i++) {
