@@ -61,7 +61,7 @@ body {
     margin: .5rem 20rem .5rem 2rem; }
 
 .section-header {
-  padding-top: 7rem;
+  padding-top: 10rem;
   padding-bottom: 5rem;
   display: grid;
   grid-template-columns: 0.8fr 1.2fr;
@@ -148,8 +148,10 @@ body {
     border: none;
     text-align: left;
     outline: none;
-    font-size: 2rem;
-    font-family: 'Baloo Bhai', sans-serif;
+    font-size: 1.5rem;
+    font-family: "Press Start 2P", sans-serif, sans-serif;
+    letter-spacing: -.2rem;
+    transform: scaleY(1.5);
     font-weight: 500; }
   .card__content {
     padding: 3rem 2rem;
@@ -466,21 +468,23 @@ tr:nth-child(odd) {
     left: 0%; } }
 
 .title {
-  font-size: 5rem;
-  font-family: 'Baloo Bhai'; }
+  font-size: 4rem;
+  font-family: "Press Start 2P", sans-serif;
+  text-transform: uppercase;
+  text-shadow: 2px 0.6rem #643caf; }
 
 .title-secondary {
-  font-family: 'Baloo Bhai';
-  font-size: 3.5rem;
+  font-family: "Press Start 2P", sans-serif;
+  font-size: 2.8rem;
   text-transform: uppercase;
   font-weight: 700;
-  color: #7B5DB3; }
+  color: #643caf; }
   .title-secondary--dark {
     color: #101d2c; }
 
 .title-tertiary {
-  font-family: 'Baloo Bhai';
-  font-size: 2.5rem;
+  font-family: "Press Start 2P", sans-serif;
+  font-size: 2rem;
   text-transform: uppercase;
   font-weight: 700; }
   .title-tertiary--light {
