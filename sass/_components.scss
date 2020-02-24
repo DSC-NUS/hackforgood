@@ -55,7 +55,7 @@
     padding-top: 10rem;
     padding-bottom: 5rem;
     display: grid;
-    grid-template-columns: 0.8fr 1.2fr;
+    grid-template-columns: 0.5fr 1.2fr;
     align-items: center;
     justify-content: center;
     background-color: $color-primary;
@@ -64,17 +64,25 @@
 
 .header {
     &__image {
-        display: block;
+        display: inline-block;
         height: 30rem;
         width: 30rem;
-        margin: 0 auto;
     }
 
     &__content {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         grid-column-gap: 2rem;
         padding: 2rem 3rem 2rem 0;
+
+        &-image {
+            height: 20rem;
+            width: 20rem;
+            display: block;
+            margin: 0 auto;
+            border-radius: 5px;
+            border: 5px solid black;
+        }
     }
 
     &__title {
