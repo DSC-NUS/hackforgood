@@ -94,6 +94,11 @@
     font-size: 1.5rem;
     color: $color-secondary;
 
+    &--light {
+        color: white;
+        font-size: 1.5rem;
+    }
+
     li::before { /* add the new bullet point */
         display: inline-block;
           content: '';
@@ -495,6 +500,8 @@
 .sponsors {
     display: grid;
     grid-template-columns: repeat(auto-fit, minMax(50rem, 1fr));
+    grid-row-gap: 2rem;
+    grid-column-gap: 2rem;
     align-items: center;
     justify-content: center;
     &:not(:last-child) {
