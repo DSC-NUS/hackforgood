@@ -65,8 +65,8 @@
     padding-bottom: 5rem;
     // display: grid;
     // grid-template-columns: 0.5fr 1.2fr;
-    // align-items: center;
-    // justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
     display: flex;
     background-color: $color-primary;
     color: $color-grey-light-1;
@@ -555,11 +555,12 @@
 
 .sponsors {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minMax(50rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minMax(20rem, 1fr));
     grid-row-gap: 2rem;
     grid-column-gap: 2rem;
     align-items: center;
     justify-content: center;
+
     &:not(:last-child) {
         margin-bottom: 3rem;
     }
@@ -573,6 +574,23 @@
         margin: 0 auto;
         border-radius: 5px;
         border: 5px solid black;
+    }
+
+    &__image--long {
+        height: 15rem;
+        padding: 2rem;
+        width: auto;
+        display: block;
+        margin: 0 auto;
+        border-radius: 5px;
+        border: 5px solid black;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .sponsor__image--long {
+        width: 80%;
+        height: auto;
     }
 }
 
