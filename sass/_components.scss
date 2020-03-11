@@ -507,6 +507,42 @@
     }
 }
 
+.section-judges {
+    background-color: white;
+    color: $color-secondary;
+    padding: 8rem 3rem;  
+}
+
+.judges {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minMax(50rem, 1fr));
+    grid-row-gap: 2rem;
+    grid-column-gap: 2rem;
+    justify-items: stretch;
+}
+
+.judge {
+    display: flex;
+    border: 3px solid rgba(black, 0.8);
+    border-radius: 5px;
+    padding: 3rem;
+    
+    &__image {
+        display: block;
+        height: 100%;
+        width: 100%;
+    }
+
+    &__image-box {
+        height: 7rem;
+        width: 7rem;
+        border-radius: 100px;
+        border: 3px solid black;
+        overflow: hidden;
+        margin-right: 3rem;
+    }
+}
+
 .section-faq {
     padding: 8rem 3rem;
     background-color: $color-grey-light-1;

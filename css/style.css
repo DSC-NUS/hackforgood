@@ -399,6 +399,35 @@ body {
     flex-direction: column;
     justify-content: center; }
 
+.section-judges {
+  background-color: white;
+  color: #101d2c;
+  padding: 8rem 3rem; }
+
+.judges {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minMax(50rem, 1fr));
+  grid-row-gap: 2rem;
+  grid-column-gap: 2rem;
+  justify-items: stretch; }
+
+.judge {
+  display: flex;
+  border: 3px solid rgba(0, 0, 0, 0.8);
+  border-radius: 5px;
+  padding: 3rem; }
+  .judge__image {
+    display: block;
+    height: 100%;
+    width: 100%; }
+  .judge__image-box {
+    height: 7rem;
+    width: 7rem;
+    border-radius: 100px;
+    border: 3px solid black;
+    overflow: hidden;
+    margin-right: 3rem; }
+
 .section-faq {
   padding: 8rem 3rem;
   background-color: #f9f7f6;
